@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<style>
+img
+{
+    width: 71px;
+    height: 75px;
+	
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+	padding-right: 20px;
+}
+</style>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $.ajax({url: "http://peoplefinder-api.pf.g4ihos.itcs.hpecorp.net/v1.0/person/mgr/niall.joh.maher@hpe.com", success: function(result)
+{
+alert(result.result[0][0].hpPictureThumbnailURI);
+$("#div1").html(result.result[0][0].cn);
+$("#div7").attr("src",result.result[0][0].hpPictureThumbnailURI );
+
+$("#div2").html(' /  ' + result.result[1][0].cn);
+$("#div8").attr("src",result.result[1][0].hpPictureThumbnailURI);
+
+$("#div3").html(result.result[2][0].cn);
+$("#div9").attr("src",result.result[2][0].hpPictureThumbnailURI);
+
+$("#div4").html(result.result[3][0].cn);
+$("#div10").attr("src",result.result[3][0].hpPictureThumbnailURI);
+
+$("#div5").html(result.result[4][0].cn);
+$("#div11").attr("src",result.result[4][0].hpPictureThumbnailURI);
+
+$("#div6").html(result.result[5][0].cn);
+$("#div12").attr("src",result.result[5][0].hpPictureThumbnailURI);
+        }});
+    });
+});
+</script>
+</head>
+<body>
+
+<ul>
+<li><div id="div1"></div></li>
+<li><img id="div7"> </img></li>
+
+<li><div id="div2"></div></li>
+<li><img id="div8"> </img></li>
+
+<li><div id="div3"></div></li>
+<li><img id="div9"> </img></li>
+
+<li><div id="div4"></div></li>
+<li><img id="div10"> </img></li>
+
+
+<li><div id="div5"></div></li>
+<li><img id="div11"> </img></li>
+
+<li><div id="div6"></div></li>
+<li><img id="div12"> </img></li>
+
+</ul>
+
+<button>Get External Content</button>
+
+</body>
+</html>
+
+<!-- / Meg Whitman / Christopher Hsu / Scott Spradley / Brian Hodgdon / Vincent Hong / Vijay Kulkarni / Niall Maher
+

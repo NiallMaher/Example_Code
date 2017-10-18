@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+    $.ajax({
+        method: 'GET',
+        url: "http://learndojo.com/api/unittopics/77?_format=json",}).done(function (data)
+            {
+              var f_table= "";
+              for (var i = 0; i < data.unittopics.topics.length; i++) {
+              f_table+= "<tr><td>" +data.unittopics.topics[i].name+  "</td><td>" +data.unittopics.topics[i].description+ "</td><td>" + "<a id=" +'Frac_Link'+i+ " href='#'>" +'Click here'+  "</td></tr>";
+              //alert("#div"+data.unittopics.topics[i].id);
+            }
+$("#Frac_Table").append(f_table);
+for (var x = 0; x < data.unittopics.topics.length; x++) 
+ {
+  $("#Frac_Link"+x).attr('href', data.unittopics.topics[x].externalUrl);
+  //alert("working");
+ }
+ 
+});
+});
+});
+</script>
+
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+    $.ajax({
+        method: 'GET',
+        url: "http://learndojo.com/api/unittopics/9?_format=json",}).done(function (data)
+            {
+              var D_table= "";
+              for (var i = 0; i < data.unittopics.topics.length; i++) {
+              D_table+= "<tr><td>" +data.unittopics.topics[i].name+  "</td><td>" +data.unittopics.topics[i].description+ "</td><td>" + "<a id=" +'Deci_Link'+i+ " href='#'>" +'Click here'+  "</td></tr>";
+              //alert("#div"+data.unittopics.topics[i].id);
+            }
+$("#Deci_Table").append(D_table);
+for (var x = 0; x < data.unittopics.topics.length; x++) 
+ {
+  $("#Deci_Link"+x).attr('href', data.unittopics.topics[x].externalUrl);
+  //alert("working");
+ }
+ 
+});
+});
+});
+</script>
+
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+    $.ajax({
+        method: 'GET',
+        url: "http://learndojo.com/api/unittopics/8?_format=json",}).done(function (data)
+            {
+              var O_table= "";
+              for (var i = 0; i < data.unittopics.topics.length; i++) {
+              O_table+= "<tr><td>" +data.unittopics.topics[i].name+  "</td><td>" +data.unittopics.topics[i].description+ "</td><td>" + "<a id=" +'Oper_Link'+i+ " href='#'>" +'Click here'+  "</td></tr>";
+              //alert("#div"+data.unittopics.topics[i].id);
+            }
+$("#Oper_Table").append(O_table);
+for (var x = 0; x < data.unittopics.topics.length; x++) 
+ {
+  $("#Oper_Link"+x).attr('href', data.unittopics.topics[x].externalUrl);
+  //alert("working");
+ }
+ 
+});
+});
+});
+</script>
+
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+    $.ajax({
+        method: 'GET',
+        url: "http://learndojo.com/api/unittopics/2?_format=json",}).done(function (data)
+            {
+              var PV_table= "";
+              for (var i = 0; i < data.unittopics.topics.length; i++) {
+              PV_table+= "<tr><td>" +data.unittopics.topics[i].name+  "</td><td>" +data.unittopics.topics[i].description+ "</td><td>" + "<a id=" +'PV_Link'+i+ " href='#'>" +'Click here'+  "</td></tr>";
+              //alert("#div"+data.unittopics.topics[i].id);
+            }
+$("#PV_Table").append(PV_table);
+for (var x = 0; x < data.unittopics.topics.length; x++) 
+ {
+  $("#PV_Link"+x).attr('href', data.unittopics.topics[x].externalUrl);
+  //alert("working");
+ }
+ 
+});
+});
+});
+</script>
+
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+    $.ajax({
+        method: 'GET',
+        url: "http://learndojo.com/api/unittopics/4?_format=json",}).done(function (data)
+            {
+              var NumP_table= "";
+              for (var i = 0; i < data.unittopics.topics.length; i++) {
+              NumP_table+= "<tr><td>" +data.unittopics.topics[i].name+  "</td><td>" +data.unittopics.topics[i].description+ "</td><td>" + "<a id=" +'NP_Link'+i+ " href='#'>" +'Click here'+  "</td></tr>";
+              //alert("#div"+data.unittopics.topics[i].id);
+            }
+$("#NP_Table").append(NumP_table);
+for (var x = 0; x < data.unittopics.topics.length; x++) 
+ {
+  $("#NP_Link"+x).attr('href', data.unittopics.topics[x].externalUrl);
+  //alert("working");
+ }
+ 
+});
+});
+});
+</script>
+
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+    $.ajax({
+        method: 'GET',
+        url: "http://learndojo.com/api/unittopics/5?_format=json",}).done(function (data)
+            {
+              var NumS_table= "";
+              for (var i = 0; i < data.unittopics.topics.length; i++) {
+              NumS_table+= "<tr><td>" +data.unittopics.topics[i].name+  "</td><td>" +data.unittopics.topics[i].description+ "</td><td>" + "<a id=" +'NS_Link'+i+ " href='#'>" +'Click here'+  "</td></tr>";
+              //alert("#div"+data.unittopics.topics[i].id);
+            }
+$("#NS_Table").append(NumS_table);
+for (var x = 0; x < data.unittopics.topics.length; x++) 
+ {
+  $("#NS_Link"+x).attr('href', data.unittopics.topics[x].externalUrl);
+  //alert("working");
+ }
+ 
+});
+});
+});
+</script>
+
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+    $.ajax({
+        method: 'GET',
+        url: "http://learndojo.com/api/unittopics/10?_format=json",}).done(function (data)
+            {
+              var D2_table= "";
+              for (var i = 0; i < data.unittopics.topics.length; i++) {
+              D2_table+= "<tr><td>" +data.unittopics.topics[i].name+  "</td><td>" +data.unittopics.topics[i].description+ "</td><td>" + "<a id=" +'2D_Link'+i+ " href='#'>" +'Click here'+  "</td></tr>";
+              //alert("#div"+data.unittopics.topics[i].id);
+            }
+$("#2D_Table").append(D2_table);
+for (var x = 0; x < data.unittopics.topics.length; x++) 
+ {
+  $("#2D_Link"+x).attr('href', data.unittopics.topics[x].externalUrl);
+  //alert("working");
+ }
+ 
+});
+});
+});
+</script>
+
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+    $.ajax({
+        method: 'GET',
+        url: "http://learndojo.com/api/unittopics/11?_format=json",}).done(function (data)
+            {
+              var D3_table= "";
+              for (var i = 0; i < data.unittopics.topics.length; i++) {
+              D3_table+= "<tr><td>" +data.unittopics.topics[i].name+  "</td><td>" +data.unittopics.topics[i].description+ "</td><td>" + "<a id=" +'3D_Link'+i+ " href='#'>" +'Click here'+  "</td></tr>";
+              //alert("#div"+data.unittopics.topics[i].id);
+            }
+$("#3D_Table").append(D3_table);
+for (var x = 0; x < data.unittopics.topics.length; x++) 
+ {
+  $("#3D_Link"+x).attr('href', data.unittopics.topics[x].externalUrl);
+  //alert("working");
+ }
+ 
+});
+});
+});
+</script>
+
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+    $.ajax({
+        method: 'GET',
+        url: "http://learndojo.com/api/unittopics/12?_format=json",}).done(function (data)
+            {
+              var S_table= "";
+              for (var i = 0; i < data.unittopics.topics.length; i++) {
+              S_table+= "<tr><td>" +data.unittopics.topics[i].name+  "</td><td>" +data.unittopics.topics[i].description+ "</td><td>" + "<a id=" +'Sym_Link'+i+ " href='#'>" +'Click here'+  "</td></tr>";
+              //alert("#div"+data.unittopics.topics[i].id);
+            }
+$("#Sym_Table").append(S_table);
+for (var x = 0; x < data.unittopics.topics.length; x++) 
+ {
+  $("#Sym_Link"+x).attr('href', data.unittopics.topics[x].externalUrl);
+  //alert("working");
+ }
+ 
+});
+});
+});
+</script>
+
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+    $.ajax({
+        method: 'GET',
+        url: "http://learndojo.com/api/unittopics/13?_format=json",}).done(function (data)
+            {
+              var LA_table= "";
+              for (var i = 0; i < data.unittopics.topics.length; i++) {
+              LA_table+= "<tr><td>" +data.unittopics.topics[i].name+  "</td><td>" +data.unittopics.topics[i].description+ "</td><td>" + "<a id=" +'LA_Link'+i+ " href='#'>" +'Click here'+  "</td></tr>";
+              //alert("#div"+data.unittopics.topics[i].id);
+            }
+$("#Line_Table").append(LA_table);
+for (var x = 0; x < data.unittopics.topics.length; x++) 
+ {
+  $("#LA_Link"+x).attr('href', data.unittopics.topics[x].externalUrl);
+  //alert("working");
+ }
+ 
+});
+});
+});
+</script>
+
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+    $.ajax({
+        method: 'GET',
+        url: "http://learndojo.com/api/unittopics/17?_format=json",}).done(function (data)
+            {
+              var T_table= "";
+              for (var i = 0; i < data.unittopics.topics.length; i++) {
+              T_table+= "<tr><td>" +data.unittopics.topics[i].name+  "</td><td>" +data.unittopics.topics[i].description+ "</td><td>" + "<a id=" +'T_Link'+i+ " href='#'>" +'Click here'+  "</td></tr>";
+              //alert("#div"+data.unittopics.topics[i].id);
+            }
+$("#Time_Table").append(T_table);
+for (var x = 0; x < data.unittopics.topics.length; x++) 
+ {
+  $("#T_Link"+x).attr('href', data.unittopics.topics[x].externalUrl);
+  //alert("working");
+ }
+ 
+});
+});
+});
+</script>
+
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+    $.ajax({
+        method: 'GET',
+        url: "http://learndojo.com/api/unittopics/18?_format=json",}).done(function (data)
+            {
+              var M_table= "";
+              for (var i = 0; i < data.unittopics.topics.length; i++) {
+              M_table+= "<tr><td>" +data.unittopics.topics[i].name+  "</td><td>" +data.unittopics.topics[i].description+ "</td><td>" + "<a id=" +'M_Link'+i+ " href='#'>" +'Click here'+  "</td></tr>";
+              //alert("#div"+data.unittopics.topics[i].id);
+            }
+$("#Money_Table").append(M_table);
+for (var x = 0; x < data.unittopics.topics.length; x++) 
+ {
+  $("#M_Link"+x).attr('href', data.unittopics.topics[x].externalUrl);
+  //alert("working");
+ }
+ 
+});
+});
+});
+</script>
+
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+    $.ajax({
+        method: 'GET',
+        url: "http://learndojo.com/api/unittopics/19?_format=json",}).done(function (data)
+            {
+              var A_table= "";
+              for (var i = 0; i < data.unittopics.topics.length; i++) {
+              A_table+= "<tr><td>" +data.unittopics.topics[i].name+  "</td><td>" +data.unittopics.topics[i].description+ "</td><td>" + "<a id=" +'A_Link'+i+ " href='#'>" +'Click here'+  "</td></tr>";
+              //alert("#div"+data.unittopics.topics[i].id);
+            }
+$("#Area_Table").append(A_table);
+for (var x = 0; x < data.unittopics.topics.length; x++) 
+ {
+  $("#A_Link"+x).attr('href', data.unittopics.topics[x].externalUrl);
+  //alert("working");
+ }
+ 
+});
+});
+});
+</script>
+
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+    $.ajax({
+        method: 'GET',
+        url: "http://learndojo.com/api/unittopics/14?_format=json",}).done(function (data)
+            {
+              var LEN_table= "";
+              for (var i = 0; i < data.unittopics.topics.length; i++) {
+              LEN_table+= "<tr><td>" +data.unittopics.topics[i].name+  "</td><td>" +data.unittopics.topics[i].description+ "</td><td>" + "<a id=" +'LEN_Link'+i+ " href='#'>" +'Click here'+  "</td></tr>";
+              //alert("#div"+data.unittopics.topics[i].id);
+            }
+$("#Length_Table").append(LEN_table);
+for (var x = 0; x < data.unittopics.topics.length; x++) 
+ {
+  $("#LEN_Link"+x).attr('href', data.unittopics.topics[x].externalUrl);
+  //alert("working");
+ }
+ 
+});
+});
+});
+</script>
+
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+    $.ajax({
+        method: 'GET',
+        url: "http://learndojo.com/api/unittopics/15?_format=json",}).done(function (data)
+            {
+              var WT_table= "";
+              for (var i = 0; i < data.unittopics.topics.length; i++) {
+              WT_table+= "<tr><td>" +data.unittopics.topics[i].name+  "</td><td>" +data.unittopics.topics[i].description+ "</td><td>" + "<a id=" +'WT_Link'+i+ " href='#'>" +'Click here'+  "</td></tr>";
+              //alert("#div"+data.unittopics.topics[i].id);
+            }
+$("#Weight_Table").append(WT_table);
+for (var x = 0; x < data.unittopics.topics.length; x++) 
+ {
+  $("#WT_Link"+x).attr('href', data.unittopics.topics[x].externalUrl);
+  //alert("working");
+ }
+ 
+});
+});
+});
+</script>
+
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+    $.ajax({
+        method: 'GET',
+        url: "http://learndojo.com/api/unittopics/16?_format=json",}).done(function (data)
+            {
+              var C_table= "";
+              for (var i = 0; i < data.unittopics.topics.length; i++) {
+              C_table+= "<tr><td>" +data.unittopics.topics[i].name+  "</td><td>" +data.unittopics.topics[i].description+ "</td><td>" + "<a id=" +'C_Link'+i+ " href='#'>" +'Click here'+  "</td></tr>";
+              //alert("#div"+data.unittopics.topics[i].id);
+            }
+$("#Capacity_Table").append(C_table);
+for (var x = 0; x < data.unittopics.topics.length; x++) 
+ {
+  $("#C_Link"+x).attr('href', data.unittopics.topics[x].externalUrl);
+  //alert("working");
+ }
+ 
+});
+});
+});
+</script>
+
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+    $.ajax({
+        method: 'GET',
+        url: "http://learndojo.com/api/unittopics/6?_format=json",}).done(function (data)
+            {
+              var R_table= "";
+              for (var i = 0; i < data.unittopics.topics.length; i++) {
+              R_table+= "<tr><td>" +data.unittopics.topics[i].name+  "</td><td>" +data.unittopics.topics[i].description+ "</td><td>" + "<a id=" +'R_Link'+i+ " href='#'>" +'Click here'+  "</td></tr>";
+              //alert("#div"+data.unittopics.topics[i].id);
+            }
+$("#Reading_Table").append(R_table);
+for (var x = 0; x < data.unittopics.topics.length; x++) 
+ {
+  $("#R_Link"+x).attr('href', data.unittopics.topics[x].externalUrl);
+  //alert("working");
+ }
+ 
+});
+});
+});
+</script>
+
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+    $.ajax({
+        method: 'GET',
+        url: "http://learndojo.com/api/unittopics/7?_format=json",}).done(function (data)
+            {
+              var Cha_Table= "";
+              for (var i = 0; i < data.unittopics.topics.length; i++) {
+              Cha_Table+= "<tr><td>" +data.unittopics.topics[i].name+  "</td><td>" +data.unittopics.topics[i].description+ "</td><td>" + "<a id=" +'cha_Link'+i+ " href='#'>" +'Click here'+  "</td></tr>";
+              //alert("#div"+data.unittopics.topics[i].id);
+            }
+$("#Chance_Table").append(Cha_Table);
+for (var x = 0; x < data.unittopics.topics.length; x++) 
+ {
+  $("#cha_Link"+x).attr('href', data.unittopics.topics[x].externalUrl);
+  //alert("working");
+ }
+ 
+});
+});
+});
+</script>
+
+
+
+</head>
+<body>
+
+ <table class="table-hover">
+  <thead>
+    <tr>
+      <th>Topic</th>
+      <th>Site</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody id="Frac_Table">
+
+  </tbody>
+</table>
+
+<br>
+<br>
+<br>
+ <table class="table-hover">
+  <thead>
+    <tr>
+      <th>Topic</th>
+      <th>Site</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody id="Deci_Table">
+
+  </tbody>
+</table>
+
+<br>
+<br>
+<br>
+
+ <table class="table-hover">
+  <thead>
+    <tr>
+      <th>Topic</th>
+      <th>Site</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody id="Oper_Table">
+
+  </tbody>
+</table>
+
+<br>
+<br>
+<br>
+ <table class="table-hover">
+  <thead>
+    <tr>
+      <th>Topic</th>
+      <th>Site</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody id="PV_Table">
+
+  </tbody>
+</table>
+
+<br>
+<br>
+<br>
+
+ <table class="table-hover">
+  <thead>
+    <tr>
+      <th>Topic</th>
+      <th>Site</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody id="NS_Table">
+
+  </tbody>
+</table>
+
+<br>
+<br>
+<br>
+ <table class="table-hover">
+  <thead>
+    <tr>
+      <th>Topic</th>
+      <th>Site</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody id="NP_Table">
+
+  </tbody>
+</table>
+
+
+<br>
+<br>
+<br>
+
+ <table class="table-hover">
+  <thead>
+    <tr>
+      <th>Topic</th>
+      <th>Site</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody id="2D_Table">
+
+  </tbody>
+</table>
+
+<br>
+<br>
+<br>
+ <table class="table-hover">
+  <thead>
+    <tr>
+      <th>Topic</th>
+      <th>Site</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody id="3D_Table">
+
+  </tbody>
+</table>
+
+<br>
+<br>
+<br>
+
+ <table class="table-hover">
+  <thead>
+    <tr>
+      <th>Topic</th>
+      <th>Site</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody id="Sym_Table">
+
+  </tbody>
+</table>
+
+<br>
+<br>
+<br>
+ <table class="table-hover">
+  <thead>
+    <tr>
+      <th>Topic</th>
+      <th>Site</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody id="Line_Table">
+
+  </tbody>
+</table>
+
+
+<!-- -->
+
+<br>
+<br>
+<br>
+
+ <table class="table-hover">
+  <thead>
+    <tr>
+      <th>Topic</th>
+      <th>Site</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody id="Time_Table">
+
+  </tbody>
+</table>
+
+<br>
+<br>
+<br>
+ <table class="table-hover">
+  <thead>
+    <tr>
+      <th>Topic</th>
+      <th>Site</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody id="Money_Table">
+
+  </tbody>
+</table>
+
+
+<br>
+<br>
+<br>
+
+ <table class="table-hover">
+  <thead>
+    <tr>
+      <th>Topic</th>
+      <th>Site</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody id="Area_Table">
+
+  </tbody>
+</table>
+
+<br>
+<br>
+<br>
+ <table class="table-hover">
+  <thead>
+    <tr>
+      <th>Topic</th>
+      <th>Site</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody id="Length_Table">
+
+  </tbody>
+</table>
+
+<br>
+<br>
+<br>
+
+ <table class="table-hover">
+  <thead>
+    <tr>
+      <th>Topic</th>
+      <th>Site</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody id="Weight_Table">
+
+  </tbody>
+</table>
+
+<br>
+<br>
+<br>
+ <table class="table-hover">
+  <thead>
+    <tr>
+      <th>Topic</th>
+      <th>Site</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody id="Capacity_Table">
+
+  </tbody>
+</table>
+
+<br>
+<br>
+<br>
+
+ <table class="table-hover">
+  <thead>
+    <tr>
+      <th>Topic</th>
+      <th>Site</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody id="Reading_Table">
+
+  </tbody>
+</table>
+
+<br>
+<br>
+<br>
+ <table class="table-hover">
+  <thead>
+    <tr>
+      <th>Topic</th>
+      <th>Site</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody id="Chance_Table">
+
+  </tbody>
+</table>
+
+<button>Get External Content</button>
+
+
+</body>
+</html>
+
+

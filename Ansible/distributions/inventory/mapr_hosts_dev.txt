@@ -1,0 +1,16 @@
+[dev-edge]
+<server hostname>
+<server hostname>
+
+[dev-data]
+<server hostname>
+<server hostname>
+<server hostname>
+<server hostname>
+<server hostname>
+<server hostname>
+<server hostname>
+<server hostname>
+<server hostname>
+<server hostname>
+<server hostname>

@@ -1,0 +1,16 @@
+[itg-edge]
+<server hostname>
+<server hostname>
+
+[itg-data]
+<server hostname>
+<server hostname>
+<server hostname>
+<server hostname>
+<server hostname>
+<server hostname>
+<server hostname>
+<server hostname>
+<server hostname>
+<server hostname>
+<server hostname>

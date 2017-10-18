@@ -1,0 +1,127 @@
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">	
+		
+<h1> Subjects for 4 class </h1>
+		<button class="btn btn-primary btn-sm active"><label for="Alg">"Table 1 Links"</label></button> 
+		<button class="btn btn-primary btn-sm active"><label for="TRIG">"Table 2 Links"</label></button>
+		<button class="btn btn-primary btn-sm active"><label for="Calc">"Table 3 Links"</label></button>
+		
+<br>
+<br>
+
+
+<input id="Alg" type="radio" name="toggle">	
+<div class="container">
+  <h2>Table 1</h2>
+  <p>Links to the following </p>
+  <table class="table table-condensed table-hover">
+    <thead>
+      <tr>
+        <th>No.</th>
+        <th>Source</th>
+        <th>Link</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>No. 1</td>
+        <td>text</td>
+        <td>www.link1.ie</td>
+      </tr>
+      <tr>
+        <td>No. 2</td>
+        <td>text</td>
+        <td>www.link2.ie</td>
+      </tr>
+      <tr>
+        <td>No. 3</td>
+        <td>text</td>
+        <td>www.link3.ie</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+<input id="TRIG" type="radio" name="toggle">		
+<div class="container">
+  <h2>Table 2</h2>
+  <p>Links to the following </p>
+  <table class="table table-condensed table-hover">
+    <thead>
+      <tr>
+        <th>No.</th>
+        <th>text</th>
+        <th>Link</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>No. 1</td>
+        <td>text</td>
+        <td>www.link1.ie</td>
+      </tr>
+      <tr>
+        <td>No. 2</td>
+        <td>text</td>
+        <td>www.link2.ie</td>
+      </tr>
+      <tr>
+        <td>No. 3</td>
+        <td>text</td>
+        <td>www.link3.ie</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<input id="Calc" type="radio" name="toggle">		
+<div class="container">
+  <h2>Table 3</h2>
+  <p>Links to the following subjects</p>
+  <table class="table table-condensed table-hover">
+    <thead>
+      <tr>
+        <th>No.</th>
+        <th>text</th>
+        <th>Link</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>No. 1</td>
+        <td>text</td>
+        <td>www.link1.ie</td>
+      </tr>
+      <tr>
+        <td>No. 2</td>
+        <td>text</td>
+        <td>www.link2.ie</td>
+      </tr>
+      <tr>
+        <td>No. 3</td>
+        <td>text</td>
+        <td>www.link3.ie</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+	  
+		  
+
+	<style>
+input[type="radio"], #Alg + div, #TRIG + div, #Calc + div
+{
+    display: none;
+}
+
+
+
+input:checked + div 
+{
+    display: block !important;
+}
+
+.container{
+background-color:#f2f2f2
+}
+	</style>

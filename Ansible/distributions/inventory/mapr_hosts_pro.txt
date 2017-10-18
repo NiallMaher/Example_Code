@@ -1,0 +1,16 @@
+[pro-edge]
+<server hostname>
+<server hostname>
+
+[pro-data]
+<server hostname>
+<server hostname>
+<server hostname>
+<server hostname>
+<server hostname>
+<server hostname>
+<server hostname>
+<server hostname>
+<server hostname>
+<server hostname>
+<server hostname>

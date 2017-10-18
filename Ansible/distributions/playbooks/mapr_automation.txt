@@ -1,0 +1,90 @@
+---
+
+- hosts: dev-edge
+## Pass in a user ##
+  #remote_user: "{{ user }}"
+
+## Define user in playbook##
+  remote_user: maherni
+
+  tasks:
+
+## Works with old mdir command ##
+#   - name: create directories old method
+#     become: yes
+#     become_user: maherni
+#     shell: mkdir /home/maherni/niall_test_old
+
+
+## works to crerte directory ##
+     - name: create directory using state=directory
+       become: yes
+       become_user: maherni
+       file: state=directory path=/home/maherni/niall_test recurse=yes
+
+
+## Fail to create looking for password for mapr ##
+#    - name: create directories as mapr
+#      become: yes
+#      become_user: mapr
+#      file: state=directory path=/home/mapr/mapr_test recurse=yes
+
+
+## Works with passing in different user and password ##
+#     - name: change user and mkdir
+#       become: yes
+#       become_method: su
+#       become_user: user
+#       file: state=directory path=/home/user/user_test recurse=yes
+
+## Works to exit from mapr ##
+#     - name: exit user
+#       shell: exit
+
+
+## Read from passwd file ##
+     - name: read the passwd file
+       shell: cat /etc/passwd
+       register: user_accts
+
+## Check to see if user exists ##
+     - name: Check if use exists in passwd
+       when: user_accts.stdout.find('maherni') != -1
+       debug: msg="user maherni exists"
+
+
+## Read from group file ##
+     - name: read the group file
+       shell: cat /etc/group
+       register: group_accts
+
+## Check to see if group exists ##
+     - name: this task checks if group exists
+       when: group_accts.stdout.find('grp_cdr_dev') != -1
+       debug: msg="user group exists"
+
+
+     - name: add line to file
+       lineinfile: dest=/home/maherni/textfile
+                   line="XXhpeprovip1:/mapr/HPEHOU4-SHARED-PRO/SDIG /opt/apps/SDIG hard,nolock"
+                   state=present
+                   insertafter=EOF
+
+
+##Another way to check if user exists##
+#     - name: Another way to check if user exists
+#       shell: grep bob /etc/passwd
+#       changed_when: false
+#       ignore_errors: yes
+
+     - name: get the username running the deploy
+       local_action: command whoami
+       register: username_on_the_host
+
+     - debug: var=username_on_the_host
+
+
+## Mount MapR volume for app_team ##  ##Works, need to find error handler##
+#     - name: Mount MapR volume
+#       shell: pbrun mount hpedevvip1:/mapr/HPEHOU4-shared-dev/nmtest /opt/apps/nmtest
+

@@ -1,0 +1,1045 @@
+/*
+ Theme Name:   Stanley Child
+ Theme URI:    https://learndojo-sazmorr.c9users.io/
+ Description:  Stanley Child Theme
+ Author:       John Doe
+ Author URI:   https://learndojo-sazmorr.c9users.io/
+ Template:     stanleywp
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  stanleywp-child
+*/
+
+
+/* =Admin bar
+-------------------------------------------------------------- */
+.admin-bar .navbar {
+	height: 40px;
+	width:100%;
+	position: fixed;
+	top: 0px;
+	z-index: 1000;
+}
+
+
+body {
+	-webkit-overflow-scrolling: touch;
+	-webkit-font-smoothing: antialiased;
+	background-color: #ffffff;
+	color: #555;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+/* Titles */
+h1, h2, h3, h4, h5, h6 { color: #333; font-family: 'Montserrat', sans-serif; font-weight: 700; }
+
+h1 { font-size: 35px; margin-bottom: 30px; margin-top: 30px; }
+
+.author-avatar img { -webkit-border-radius: 95px; -moz-border-radius: 95px; border-radius: 95px; }
+
+
+/* Paragraph & Typographic */
+p { font-size: 16px; line-height: 28px; margin-bottom: 25px; }
+
+.centered { text-align: center; }
+
+/* Links */
+a {
+	-webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+	-o-transition: color 0.1s ease-in, background 0.1s ease-in;
+	-ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+	-moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+	color: #1abc9c;
+	transition: color 0.1s ease-in, background 0.1s ease-in;
+	word-wrap: break-word;
+}
+
+a:hover,
+a:focus { color: #7b7b7b; outline: 0; text-decoration: none; }
+
+a:before,
+a:after {
+	-webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+	-o-transition: color 0.1s ease-in, background 0.1s ease-in;
+	-ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+	-moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+	transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+hr {
+	border: 0;
+	border-top: 1px solid #ccc;
+	display: block;
+	height: 1px;
+	margin: 1em 0;
+	padding: 0;
+}
+
+
+.navbar { margin-bottom: 0px; text-transform: uppercase; }
+
+.navbar-inverse { padding-bottom: 100px; padding-top: 70px; } /*changed 19.09.2017 as nav bar was not including menu */
+
+.navbar-inverse { background-color: #1abc9c; border-color: #16a085; }
+
+.navbar-inverse .navbar-nav > li > a { color: white; }
+
+.navbar-inverse .navbar-nav > li > a:hover { color: #222222; }
+
+.navbar-brand { font-size: 20px; font-weight: 700; letter-spacing: 2px; }
+
+.navbar-inverse .navbar-brand { color: white; }
+
+.navbar-inverse .navbar-toggle { border-color: transparent; }
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover { background-color: transparent; color: #222222; }
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus { background-color: transparent; color: #222222; }
+
+.progress-bar-theme { background-color: #1abc9c; }
+
+
+/* Helpers */
+
+.mt { margin-bottom: 40px; margin-top: 40px; }
+
+.pt { padding-bottom: 50px; padding-top: 50px; }
+
+
+/* +++++ WRAP SECTIONS +++++ */
+
+#ww { background-image: url(http://learndojo.com/student/wp-content/uploads/2016/10/background_panel.png); background-color: #f2f2f2; padding-bottom: 125px; padding-top: 30px;}
+
+
+#footer { background-color: #2f2f2f; padding-bottom: 50px; padding-top: 50px; }
+
+#footer p { color: white; }
+
+#footer h4 { color: white; padding-bottom: 20px; text-transform: uppercase; }
+
+
+/* +++++ Color Wraps / Blog Page +++++ */
+
+#grey { background-color: #f2f2f2; padding-bottom: 60px; padding-top: 60px; }
+
+#white { background-color: #ffffff; padding-bottom: 60px; padding-top: 60px; }
+
+
+
+/* Blog Date*/
+bd {
+	color: #d2d2d2;
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+/* Blog Author*/
+ba { font-size: 12px; padding-left: 5px; text-transform: uppercase; }
+
+/* Blog Quote */
+.bq { font-size: 22px; padding-top: 30px; }
+
+/* Blog Tags */
+bt { font-size: 12px; }
+
+
+
+/*==============2nd menu=============*/
+.dropbtn {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 0px solid #F0FFFF;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 0 10px #F0FFFF inset;
+    height: 70px;
+    margin: 0 0 0 25px;
+    padding: 0px;
+    width: 100px;
+}
+
+
+/* button design */
+.dropbtnnumber 	{
+                  background-color: #57b2d8;
+                  border: 0px solid #F0FFFF;
+                    border-radius: 50%;
+                     box-shadow: 0 0 10px #F0FFFF inset;
+                        height: 120px;
+                              margin: 0 0 0 25px;
+                padding: 16px;
+                   width: 120px;
+} 
+
+.dropbtnalgebra { background-color:#dc68bf;
+                  border: 0px solid #F0FFFF;
+                    border-radius: 50%;
+                     box-shadow: 0 0 10px #F0FFFF inset;
+                        height: 120px;
+                        margin: 0 0 0 25px;
+                padding: 16px;
+                   width: 120px;
+} 
+.dropbtnss {    background-color: #8ccc7a; 
+                border: 0px solid #F0FFFF;
+                border-radius: 50%;
+                box-shadow: 0 0 10px #F0FFFF inset;
+                height: 120px;
+                margin: 0 0 0 25px;
+                padding: 16px;
+                width: 120px;
+                   
+} 
+.dropbtnmeasures{   background-color: #f26262; 
+                    border: 0px solid #F0FFFF;
+                    border-radius: 50%;
+                    box-shadow: 0 0 10px #F0FFFF inset;
+                    height: 120px;
+                    margin: 0 0 0 25px;
+                    padding: 16px;
+                    width: 120px;
+                   
+} 
+.dropbtndata{ background-color: #dadf50; 
+                border: 0px solid #F0FFFF;
+                border-radius: 50%;
+                box-shadow: 0 0 10px #F0FFFF inset;
+                height: 120px;
+                margin: 0 0 0 25px;
+                padding: 16px;
+                width: 120px;
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content
+{
+    /*display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    width:100%;
+    padding: 0;
+}*/
+  
+  color: #f9f9f9;
+  min-width: 160px;
+  position: absolute;
+  display:none;
+  padding:0px 0px;
+  text-decoration:none;
+ 
+  height: 100%;
+  line-height: 60px;}
+  
+  
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+   
+    width:100%;
+    text-decoration: none;
+    display: block;
+
+    height: 60px;
+    line-height: 60px;
+}
+
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+    position: absolute;
+    width:160px;
+    
+    
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41; 
+    
+}
+.dropdown-content a:hover:after { /* CSS arrow */
+	top: 2%; left: 50%; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: rgba(160, 160, 160, 0); border-bottom-color: #a0a0a0; border-width: 10px; margin-left: -10px;
+}
+
+/*==================full width drop down menu================*/
+nav {
+  text-align:center;
+  width: 120%;
+  background:none;
+  padding: 0;
+  margin: 0;
+  height: 60px;
+  position:relative;
+}
+
+nav ul {
+  background:none;
+  list-style:none;
+  padding:0 20px;
+  margin: 0;
+  height: 60px;
+
+}
+
+.numbers { 
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #57b2d8;
+                 border-radius: 50%;
+                     box-shadow: 0 0 10px #F0FFFF inset;
+                        height: 120px;
+                              margin: 0 0 0 25px;
+                padding: 16px;
+                   width: 120px;
+                   border:1px solid #fff;
+                   opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+.numbers:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+    
+   
+}
+
+.nameme {background-color:#dc68bf;
+                  font-size: 16px;
+    font-weight: 700;
+                 border-radius: 50%;
+                     box-shadow: 0 0 10px #F0FFFF inset;
+                        height: 120px;
+                              margin: 0 0 0 25px;
+                padding: 16px;
+                   width: 120px;
+                   border:1px solid #fff;
+                   opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+.nameme:hover {
+     opacity: 1.0;
+    filter: alpha(opacity=100);
+  
+}
+.space{ background-color:#8ccc7a;
+                  font-size: 16px;
+        font-weight: 700;
+                 border-radius: 50%;
+                     box-shadow: 0 0 10px #F0FFFF inset;
+                        height: 120px;
+                              margin: 0 0 0 25px;
+                padding: 16px;
+                   width: 120px;
+                   border:1px solid #fff;
+                   opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+.space:hover {
+     opacity: 1.0;
+    filter: alpha(opacity=100);
+
+}
+
+.measures{
+    background-color: #f26262; 
+    font-size: 16px;
+    font-weight: 700;   
+    border-radius: 50%;
+    box-shadow: 0 0 10px #F0FFFF inset;
+    height: 120px;
+    margin: 0 0 0 25px;
+    padding: 16px;
+    width: 120px;
+    border:1px solid #fff;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+.measure:hover {
+     opacity: 1.0;
+    filter: alpha(opacity=100);
+   
+}
+
+.data {
+    background-color: #dadf50; 
+     font-size: 16px;
+    font-weight: 700;
+                 border-radius: 50%;
+                     box-shadow: 0 0 10px #F0FFFF inset;
+                        height: 120px;
+                              margin: 0 0 0 25px;
+                padding: 16px;
+                   width: 120px;
+                   border:1px solid #fff;
+                   opacity: 0.5;
+    filter: alpha(opacity=50);
+    
+}
+
+.data :click{ opacity: 1.0;
+    filter: alpha(opacity=100);
+  
+}
+
+nav ul li {
+  display: inline-block;
+  
+}
+
+
+nav ul li a {
+  color: #333333;
+  display:block;
+  padding:0px 40px;
+  text-decoration:none;
+  float: left;
+  height: 60px;
+   line-height: 60px;
+}
+
+nav ul li:active {
+  background-color: none;
+   
+}
+
+
+nav ul li:click > a{
+    color:#FFFFFF;
+    
+}
+
+nav ul li:hover > ul {
+  display:block;
+}
+
+/* semi circle hover menu */
+
+nav ul ul {
+  transition: all 0.2s ease;
+  cursor:pointer;
+  background: #fffcfc;
+  padding:10;
+  text-align: center;
+  display:none;
+  width: 100%;
+  position: absolute;
+  top: 120px;
+  left: 0px;
+  border-radius: 0%;
+  
+}
+
+/* stopped here */
+nav ul ul:after {
+    content: "";
+    position: relative;
+    top: 0%;
+    left: 50%;
+    border-bottom: 8px solid #ccc;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    margin-left: -8px;
+    
+   
+} 
+
+/*=================Picture menu============*/
+
+.menu-navigation-icons {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size:0;
+}
+
+.menu-navigation-icons a {
+    display: inline-block;
+    color: #ffffff;
+    background-color: #232526;
+    font-size: 80px;
+    font-weight: bold;
+    box-shadow: 1px 2px 1px 0 rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    width: 136px;
+    height: 109px;
+}
+
+.menu-navigation-icons a:hover{
+    opacity:0.92;
+}
+
+.menu-navigation-icons a i {
+    display: block;
+    line-height: 2;
+}
+
+.menu-navigation-icons a span {
+    display: block;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 0;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+/* Menu colors */
+
+.menu-navigation-icons a.menu-magenta  { background-color: #dc68bf; }
+.menu-navigation-icons a.menu-magenta i { color: #9d518a; }
+
+.menu-navigation-icons a.menu-blue		{ background-color: #57b2d8; }
+.menu-navigation-icons a.menu-blue i	{ color: #3e8fb1; }
+
+.menu-navigation-icons a.menu-green		{ background-color: #8ccc7a; }
+.menu-navigation-icons a.menu-green i	{ color: #6fad5e; }
+
+.menu-navigation-icons a.menu-yellow	{ background-color: #dadf50; }
+.menu-navigation-icons a.menu-yellow i	{ color: #babe4a; }
+
+.menu-navigation-icons a.menu-red 		{ background-color: #f26262; }
+.menu-navigation-icons a.menu-red i		{ color: #d34646; }
+
+/* Make this page responsive */
+
+.slicknav_menu {
+    display:none;
+}
+
+@media (max-width: 800px) {
+    .menu-navigation-icons{
+        display:none;
+    }
+
+    .slicknav_nav a i {
+        display: none;
+    }
+
+    .slicknav_menu {
+        display:block;
+    }
+}
+
+
+
+
+
+/*=====================trigger icon===========*/
+.ch-grid {
+	margin: 20px 0 0 0;
+	padding: 0;
+	list-style: none;
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+
+.ch-grid:after,
+.ch-item:before {
+	content: '';
+    display: table;
+}
+
+.ch-grid:after {
+	clear: both;
+}
+
+.ch-grid li {
+	width: 205px;
+	height: 205px;
+	display: inline-block;
+	margin: 20px;
+}
+
+
+.ch-item {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	overflow: hidden;
+	position: relative;
+	cursor: default;
+	box-shadow: 
+		inset 0 0 0 16px rgba(255,255,255,0.6),
+		0 1px 2px rgba(0,0,0,0.1);
+	transition: all 0.4s ease-in-out;
+	margin-bottom: 100px;
+}
+
+/*background img*/
+.ch-img-1 { 
+	background-image: url(http://learndojo.com/student/wp-content/uploads/2016/10/English.png);
+	background-size:210px 210px;
+	border-radius: 50%;
+    position: relative;
+    height: 210px;
+    width: 210px;
+}
+
+.ch-img-2 { 
+	background-image: url(http://learndojo.com/student/wp-content/uploads/2016/10/Maths.png);
+	background-size:210px 210px;
+}
+
+.ch-img-3 { 
+	background-image: url(http://learndojo.com/student/wp-content/uploads/2016/10/Irish.png);
+	background-size:210px 210px;
+	border-radius: 50%;
+    position: relative;
+    height: 100%;
+}
+
+.ch-img-4 {
+    background-image: url(https://cdn4.iconfinder.com/data/icons/education-and-school-flat-icons/512/physics_atom_molecule_innovation_education_equipment_learning_object_school_item_college_flat_icon_symbol-512.png);
+}
+.ch-info {
+	position: absolute;
+	background: rgba(63,147,147, 0.8);
+	width: inherit;
+	height: inherit;
+	border-radius: 50%;
+	overflow: hidden;
+	opacity: 0;
+	transition: all 0.4s ease-in-out;
+	transform: scale(0);
+}
+
+
+/*inside of circle strands eg.algebra position */
+
+ .ch-info h3 {
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 22px;
+	margin: 0 30px;
+	padding: 15px 0 0 0;
+	height: 50px;
+	font-family: 'Open Sans', Arial, sans-serif;
+	text-shadow: 
+		0 0 1px #fff, 
+		0 1px 2px rgba(0,0,0,0.3);
+}
+
+.ch-info p {
+	color: #fff;
+	padding: 0px 0px;
+	font-style: italic;
+	margin: 0 0px;
+	font-size: 12px;
+	border-top: 0.5px solid rgba(255,255,255,0.5);
+	opacity: 0;
+	transition: all 1s ease-in-out 0.4s;
+}
+
+.ch-info p a {
+   /*	display: block; */
+	color: rgba(255,255,255,0.7);
+	font-style: normal;
+	font-weight: 500;
+	text-transform: uppercase;
+	font-size: 12px;
+	letter-spacing: 1px;
+	padding-top: 0px;
+	font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.ch-info p a:hover {
+	color: rgba(255,242,34, 0.8);
+}
+
+.ch-item:hover {
+	box-shadow: 
+		inset 0 0 0 1px rgba(255,255,255,0.1),
+		0 1px 2px rgba(0,0,0,0.1);
+		
+}
+
+.ch-item:hover .ch-info {
+	transform: scale(1);
+	opacity: 1;
+	
+}
+
+.ch-item:hover .ch-info p {
+	opacity: 1;
+}
+
+.col-md-4 {
+   width: 100%; /*fallback*/
+   width: 100vw;
+}
+
+.h2{
+    visibility: hidden; /* Makes input not-clickable */
+   position: absolute; /* Remove input from document flow */
+}
+
+.col-md-3{
+    background-color:#BBDEF0;            /*#AFCFE3*/
+        font-weight: 700;
+        border-radius: 50%;
+        box-shadow: 0 0 10px #F0FFFF inset;
+        height: 130px;
+        margin: 0 0 0 25px;
+        width: 130px;
+        border:1px solid #fff;
+        opacity: 0.7;
+    filter: alpha(opacity=80);
+    margin-bottom: 120px;
+}
+
+    
+.col-md-3:hover {
+    background-color:#6D9DC5;
+  }
+
+
+/* toggle function strand units , tabs styling eg fractions, decimals etc */ 
+
+.btn{
+   
+    width: 115px;
+    height: 115px;
+    background-color:#D3F2D3;
+    margin-left:62px;
+    border-radius:50%;
+    box-shadow: 0 0 5px #F0FFFF inset;
+    border:4px solid #D3F2D3;
+    font-size: 14px;
+    font-family: cursive;
+    text-align: center!important;
+    font-weight: 700;
+	text-transform: uppercase;
+	text-shadow: 
+	0 0 1px #fff, 
+	0 1px 2px rgba(0,0,0,0.3);
+	opacity: 0.6;
+    filter: alpha(opacity=60);
+    margin-top: 10px;
+    white-space: normal /* MIGHT REMOVE THIS DEPENDING */
+}
+
+
+/*
+.btn-1 {
+    background-image: url("https://chalkboard-sazmorr.c9users.io/wp-content/uploads/2016/09/fractions-md.png");
+    
+    
+}
+
+.bn-2{
+    background-image: url(https://chalkboard-sazmorr.c9users.io/wp-content/uploads/2016/09/decimals3.png);
+}
+*/
+
+
+.btn:hover {
+	box-shadow: 
+	inset 0 0 0 5px rgba(255,255,255,0.1),
+		0 1px 3px rgba(0,0,0,10);
+	background-color: #ABDEC3;
+}
+
+.examplecursive4 {
+    font-family: cursive;
+}
+
+.btn:hover .btn {
+	transform: scale(1);
+	opacity: 1;
+	
+}
+
+.btn:hover .btn p {
+	opacity: 1;
+}
+    
+
+
+
+
+.nav-tabs{
+     border-radius: 90px 90px 0 0;
+         border-bottom: none;
+}
+
+
+.tab-content{
+    width: 720px;
+    height: 200px;
+    position: static;
+    /*background-color:#F2F5F4; just for testing  */
+   /* margin-bottom: 100px; */
+   
+
+  
+}
+
+.container_units{
+    width: 180px;
+    height: 60px;
+    float: left;
+}
+
+/*.section{
+    margin-left:200px;
+}
+
+.fraction1{
+    margin-left:200px;
+}    19.09.2016  changing inside toggle layout */
+
+
+
+/* toggle sidebar nav, under page toggle js nav */
+html,body{
+    height:100%;
+    min-height:100%;
+}
+.wrapper{
+    width:100%;
+    height:100%;
+
+}
+
+#wrapper {
+	padding-top: 160px;
+}
+
+.sidebar-wrapper{
+    position:fixed;
+    width:200px;    
+    height:100px;
+    background:#fff;
+    font-size: 16;
+}
+
+/*
+.content-wrapper{
+    padding-left:200px;
+}*/
+
+.sidebar-nav{
+    list-style:none;
+}
+
+
+    .collapse.in { min-height: 50px;border: 1px solid blue; 
+}
+
+
+
+
+
+
+
+
+/*Sarah K table*/
+td, th {
+  
+  padding: 0.5rem;
+  font-family: sans-serif;
+
+}
+td:hover {
+    background-color:#70838A;
+}
+
+tr:nth-child(even) td { background: #DFF2DF; }
+tr:nth-child(odd) td { background: #C7E6D6; }
+th{
+    text-align: center;
+    background-color: #9CCD74;
+    width: 100%;
+   
+    
+    
+}
+
+.new-tab-content{
+    width: 720px;
+    height: 200px;
+    position: static;
+   /* background-color:#F2F5F4; just for testing  */
+   /* margin-bottom: 100px; */
+}
+
+.f_size
+{
+    font-size: 21px;
+}
+
+.btn-hide
+{
+    opacity: 0;
+}
+
+.sub_name
+{
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.navbar 
+{
+  background-image: url("http://learndojo.com/student/wp-content/uploads/2016/10/Header_edit.png");
+}
+
+.navbar-inverse 
+{
+  background-image: url("http://learndojo.com/student/wp-content/uploads/2016/10/Header_edit.png");
+}
+
+
+.navbar-static-top
+{
+  background-image: url("http://learndojo.com/student/wp-content/uploads/2016/10/Header_edit.png");
+}
+
+.dropdown-menu {
+	top: 175px;
+	background-color: #f2f2f2;
+	padding: 0px 0;
+    margin:  0px;
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus
+{
+    background-color: inherit
+}
+
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus
+{
+    background-color: #1ABC9C
+}
+
+.dropdown-menu > li > a
+{
+    	line-height: 2.5;
+}
+
+/*
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus
+{
+     background-color: #1ABC9C
+} */
+
+
+.sub_name
+{
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.sub_name1
+{
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+
+.sub_name2
+{
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.sub_name3
+{
+    padding-top: 35px;
+    padding-bottom: 10px;
+}
+
+.sub_name4
+{
+    padding-top: 23px;
+    padding-bottom: 10px;
+}
+
+.sub_name5
+{
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+
+.sub_name6
+{
+    padding-top: 41px;
+    padding-bottom: 10px;
+}
+
+.sub_name7
+{
+    padding-top: 35px;
+    padding-bottom: 10px;
+}
+
+.sub_name8
+{
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.sub_name9
+{
+    padding-top: 35px;
+    padding-bottom: 10px;
+}
+
+.sub_name10
+{
+    padding-top: 42px;
+    padding-bottom: 10px;
+}
+
+.sub_name11
+{
+    padding-top: 24px;
+    padding-bottom: 10px;
+}
+
+.sub_name12
+{
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.sub_name13
+{
+    padding-top: 7px;
+    padding-bottom: 10px;
+}
+
+
+
+tbody {
+    display:block;
+    height:200px;
+    overflow:auto;
+}
+thead, tbody tr {
+    display:table;
+    width:100%;
+    table-layout:fixed;
+}
+thead {
+    width: calc( 100% - 1em )
+}
+
+#maths_su{
+	padding-bottom: 210px;
+}
